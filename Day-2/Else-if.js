@@ -24,19 +24,19 @@ function readLine() {
 
 function getGrade(score) {
     let grade;
-    if (score<=5){
+    if (score<=5 && score>=0){
         return 'F'
     }
-    else if(score<=10){
+    else if(score>5 && score<=10){
         return 'E'
     }
-    else if(score<=15){
+    else if(score> 10 && score<=15){
         return 'D'
     }
-    else if(score<=10){
+    else if(score>15 && score<=20){
         return 'C'
     }
-    else if(score<=25){
+    else if(score<=25 && score>20){
         return 'B'
     }
     else {
